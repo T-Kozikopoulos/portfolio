@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-sm navbar-dark" style="text-align: center;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav" style="font-size: 130%">
+        <ul class="navbar-nav navbar-nav mx-auto">
+            <li
+                {% if '/' == request.path %}
+                    class="nav-item active mr-3"
+                {% else %}
+                    class="nav-item mr-3"
+                {% endif %}
+            >
+                <a class="nav-link" href="{% url 'index' %}">Home</a>
+            </li>
+            <li
+                {% if '/projects/' == request.path %}
+                    class="nav-item active mr-3"
+                {% else %}
+                    class="nav-item mr-3"
+                {% endif %}
+            >
+                <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+            </li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="panel introduction text-center">
+        <h2 class="welcome-title animated fadeInLeft">Tasos Kozikipoulos</h2><br>
+        <h6 class="animated fadeInRight">
+            Web Developer. Freelance programmer.
+            Python enthusiast. Problem solver.
+        </h6>
+    </div>
+    <br><hr class="mb-4"><br>
+    <div class="panel latest-projects">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="project-title animated fadeInUp">
+                    <h2>Latest Projects</h2>
+                    <a href="{% url 'projects' %}" class="btn btn- btn-lg">View All</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <br><!-- Makes it more mobile friendly -->
+                <div class="row">
+                    {% for project in projects %}
+                        <div class=" project col-md-6 col-sm-12 btn btn-default btn-lg">
+                            <div class="panel-body text-center"><br>
+                                <div class="title">
+                                    <h4>{{ project.title }}</h4><br class="small-break">
+                                </div>
+                                <a href="http://{{ project.demo }}" class="btn btn-info btn-md text-dark">
+                                    Visit <i class="fa fa-{{ project.icon }}" aria-hidden="true"></i>
+                                </a>
+                            </div>
+							<br>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><hr class="mb-4">
+    <div class="container contact-info text-white">
+        <h2 class="welcome-title text-center animated fadeInLeft">Get in Touch</h2><br>
+        <div class="text-center text-uppercase mb-0">
+            <h5 class="animated fadeInRight"><b>Email: </b>t.kozikopoulos@gmail.com</h5>
+            <h5 class="animated fadeInRight"><b>Github: </b>github.com/T-Kozikopoulos</h5>
+        </div>
+    </div>
+    <br><br><br>
+{% endblock %}

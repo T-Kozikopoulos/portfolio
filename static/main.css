@@ -1,53 +1,54 @@
 .introduction {
-    background-image: radial-gradient(circle, rgba(39, 90, 163, 0.4), rgba(38, 151, 193, 0.3));
+    background-image: radial-gradient(circle, rgba(58, 58, 58, 0.9), rgba(71, 71, 71, 0.9));
     padding: 30px 30px 30px 30px;
     border-style: double;
     border-width: 2px;
-    border-color: #193351;
+    border-color: #18375e;
 }
 
 .latest-projects {
-    background-image: radial-gradient(circle, rgba(39, 90, 163, 0.4), rgba(38, 151, 193, 0.3));
+    background-image: radial-gradient(circle, rgba(58, 58, 58, 0.9), rgba(71, 71, 71, 0.9));
     padding: 50px 50px 50px 50px;
     border-style: double;
     border-width: 2px;
-    border-color: #193351;
+    border-color: #18375e;
 }
 
 .contact-info {
-    background-image: radial-gradient(circle, rgba(39, 90, 163, 0.4), rgba(38, 151, 193, 0.3));
+    background-image: radial-gradient(circle, rgba(58, 58, 58, 0.9), rgba(71, 71, 71, 0.9));
     padding: 35px 35px 35px 35px;
     border-style: double;
     border-width: 2px;
-    border-color: #193351;
+    border-color: #18375e;
 }
 
 .projects {
-    background-image: radial-gradient(circle, rgba(39, 90, 163, 0.4), rgba(38, 151, 193, 0.3));
+    background-image: radial-gradient(circle, rgba(58, 58, 58, 0.9), rgba(71, 71, 71, 0.9));
     padding: 25px 25px 25px 25px;
     border-style: double;
     border-width: 2px;
-    border-color: #193351;
+    border-color: #18375e;
 }
 
 .project {
-    background-image: radial-gradient(circle, rgba(39, 90, 163, 0.6), rgba(14, 60, 124, 0.3));    padding: 15px 15px 15px 15px;
+    background-image: radial-gradient(#2d2d2d, #1b1b1b);
+	padding: 15px 15px 15px 15px;
     border-style: double;
     border-width: 2px;
-    border-color: #193351;
+    border-color: #18375e;
 }
 
 nav {
-    background-image: radial-gradient(circle, rgba(0, 52, 109, 0.8), rgba(0, 52, 109, 0.9));    padding: 15px 15px 15px 15px;
+    background-image: radial-gradient(circle, rgba(20, 68, 96, 0.9), rgba(6, 69, 102, 0.7));    padding: 15px 15px 15px 15px;
 }
 
 hr {
     border-style: dashed;
     border-width: 1px;
-    border-color: #193351;
+    border-color: #18375e;
 }
 
 body {
-    background-image: linear-gradient(#43ceb9, #17469d);
+    background-image: radial-gradient(#2d2d2d, #1b1b1b);
 	background-repeat: repeat-y;
 }

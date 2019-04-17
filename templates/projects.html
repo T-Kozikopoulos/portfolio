@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="panel projects">
+    <div class="panel projects text-white">
         <div class="container">
             <h2 class="text-center">MY PROJECTS</h2><br>
-            <div class="row">
+            <div class="row text-white">
 
                 {% for project in projects %}
                     <div class="project col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <div class="panel-body text-center text-white">
+                        <div class="panel-body text-center">
                             <div class="title">
                                 <h3>
                                     {{ project.title }}
@@ -28,7 +28,7 @@
                             <button class="btn btn-outline-primary">
                             <a href="http://{{ project.demo }}" class="card-link text-white"><b>Demo</b></a>
                                 </button>
-                            <button class="btn btn-outline-info">
+                            <button class="btn btn-outline-primary">
                             <a href="{{ project.source }}" class="card-link text-warning"><b>Source code</b></a>
                             </button>
                         </div>

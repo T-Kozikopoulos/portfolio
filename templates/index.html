@@ -1,20 +1,20 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="panel introduction text-center">
-        <h2 class="welcome-title animated fadeInLeft">Tasos Kozikipoulos</h2><br>
+    <div class="panel introduction text-center text-white">
+        <h2 class="welcome-title animated fadeInLeft">Tasos Kozikopoulos</h2><br>
         <h6 class="animated fadeInRight">
             Web Developer. Freelance programmer.
             Python enthusiast. Problem solver.
         </h6>
     </div>
     <br><hr class="mb-4"><br>
-    <div class="panel latest-projects">
+    <div class="panel latest-projects text-white">
         <div class="row">
             <div class="col-md-4 col-sm-12">
                 <div class="project-title animated fadeInUp">
-                    <h2>Latest Projects</h2>
-                    <a href="{% url 'projects' %}" class="btn btn- btn-lg">View All</a>
+                    <h2>Latest Projects</h2><br>
+                    <a href="{% url 'projects' %}" class="btn btn-outline-info btn-lg text-white"><b>View All</b></a>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
@@ -22,11 +22,11 @@
                 <div class="row">
                     {% for project in projects %}
                         <div class=" project col-md-6 col-sm-12 btn btn-default btn-lg">
-                            <div class="panel-body text-center"><br>
+                            <div class="panel-body text-center text-white"><br>
                                 <div class="title">
                                     <h4>{{ project.title }}</h4><br class="small-break">
                                 </div>
-                                <a href="http://{{ project.demo }}" class="btn btn-info btn-md text-dark">
+                                <a href="http://{{ project.demo }}" class="btn btn-info btn-md text-white">
                                     Visit <i class="fa fa-{{ project.icon }}" aria-hidden="true"></i>
                                 </a>
                             </div>
